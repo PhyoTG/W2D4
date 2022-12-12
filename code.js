@@ -12,8 +12,6 @@ String.prototype.filter = function(bannedWords) {
     .filter(x => !bannedWords.includes(x))
     .reduce((a,b) => a + " " + b);
 }
-// let myString = "This house is not nice!"
-// console.log(myString.filter('not'));
 
 /**
 2. Write a BubbleSort algorithm on the Array object. Bubble sort is a simple sorting algorithm
@@ -34,7 +32,6 @@ Array.prototype.bubbleSort = function() {
     }
     return this;
 }
-// console.log ([6,4,0, 3,-2,1].bubbleSort());
 
 /**
 3. Create an object called Teacher derived from the Person class, and implement a method called teach
@@ -59,7 +56,3 @@ Student.prototype.learn = function(subject)
  console.log(this.name + " just learned " + subject);
  return (this.name + " just learned " + subject);
 }
-
-// var me = new Student();
-// me.initialize("John", 25);
-// me.learn("Inheritance");
